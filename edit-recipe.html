@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Recipe - PantryPal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="container nav-container">
+        <h1 class="logo">PantryPal</h1>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">View Recipes</a></li>
+                <li><a href="add-recipe.html">Add Recipe</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="form-section">
+        <h2>Edit Recipe</h2>
+        <p>Update the recipe information below.</p>
+
+        <form>
+            <label for="title">Recipe Title</label>
+            <input type="text" id="title" name="title" value="Fluffy Pancakes" required>
+
+            <label for="cuisine">Cuisine</label>
+            <input type="text" id="cuisine" name="cuisine" value="American">
+
+            <label for="prep">Prep Minutes</label>
+            <input type="number" id="prep" name="prep_minutes" value="12" required>
+
+            <label for="cook">Cook Minutes</label>
+            <input type="number" id="cook" name="cook_minutes" value="15" required>
+
+            <label for="source">Source URL</label>
+            <input type="url" id="source" name="source_url" placeholder="Optional">
+
+            <label for="ingredients">Ingredients</label>
+            <textarea id="ingredients" name="ingredients" rows="4">1 cup Flour
+1 cup Milk
+2 Eggs</textarea>
+
+            <label for="steps">Instructions</label>
+            <textarea id="steps" name="steps" rows="5" required>Mix the flour, milk, and eggs together.
+Pour the batter onto a heated pan.
+Cook until golden brown on both sides.</textarea>
+
+            <button type="submit">Save Changes</button>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 PantryPal. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
