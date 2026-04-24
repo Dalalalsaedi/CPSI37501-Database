@@ -1,0 +1,41 @@
+@model PantryPalApp.Models.Recipe
+
+@{
+    ViewData["Title"] = "Add Recipe";
+}
+
+<h2>Add Recipe</h2>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="UserId" class="form-label"></label>
+        <input asp-for="UserId" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Cuisine" class="form-label"></label>
+        <input asp-for="Cuisine" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="PrepMinutes" class="form-label"></label>
+        <input asp-for="PrepMinutes" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="CookMinutes" class="form-label"></label>
+        <input asp-for="CookMinutes" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="SourceUrl" class="form-label"></label>
+        <input asp-for="SourceUrl" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Save</button>
+</form>

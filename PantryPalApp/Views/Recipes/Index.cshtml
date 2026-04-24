@@ -1,0 +1,35 @@
+@model List<PantryPalApp.Models.Recipe>
+
+@{
+    ViewData["Title"] = "Recipes";
+}
+
+<h2>Recipes</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Add New Recipe</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Cuisine</th>
+            <th>Prep Minutes</th>
+            <th>Cook Minutes</th>
+            <th>Source URL</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var recipe in Model)
+    {
+        <tr>
+            <td>@recipe.Title</td>
+            <td>@recipe.Cuisine</td>
+            <td>@recipe.PrepMinutes</td>
+            <td>@recipe.CookMinutes</td>
+            <td>@recipe.SourceUrl</td>
+        </tr>
+    }
+    </tbody>
+</table>
